@@ -35,9 +35,13 @@ class Mastermind {
 	int totalCorrect;
     Attempt key;
     std::vector<Attempt> playingboard;
+
+    // Only allowed these six characters in the data set
     const std::unordered_set<char> CHARACTER_LIST = {'A', 'B', 'C', 'D', 'E', 'F'};
     bool checkInSet(char a);
     Attempt createKey();
+
+    // input and ouput for players
     void printCorrect(size_t index);
     void printBoard();
     bool playRound(int roundNumber);

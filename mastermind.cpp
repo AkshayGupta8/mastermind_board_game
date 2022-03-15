@@ -3,7 +3,7 @@
 using namespace std;
 
 Mastermind::Mastermind() {
-    cout << "Please enter a key for your partner to deduce!" << endl << endl;
+    cout << "Please enter a key for your partner to deduce!\n\n";
     key = createKey();
     playingboard.resize(10);
 
