@@ -1,0 +1,8 @@
+#!/bin/bash
+filecpp="mastermind.cpp"
+fileO="${filecpp%????}"".o"
+g++ -std=c++17 -Wall   -pedantic   -O3 -DNDEBUG -c $filecpp
+g++ -std=c++17 -Wall   -pedantic   -O3 -DNDEBUG $fileO -o test
+time ./test
+rm test
+rm $fileO
